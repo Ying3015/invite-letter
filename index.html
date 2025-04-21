@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiệp mời cute cute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="EmCoNghe_Kha.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="slide active" id="slide0">
+    <h2>Cậu có thư nè 💌</h2>
+    <button onclick="nextSlide()">Mở thư 💖</button>
+  </div>
+
+  <div class="slide" id="slide1">
+    <div class="typewriter-text">Hello trai đẹp 💐</div>
+    <button onclick="nextSlide()">👉 Tiếp nè</button>
+  </div>
+
+  <div class="slide" id="slide2">
+    <h2>Nghỉ lễ này trai đẹp muốn đi chơi cùng mình hong? 🥺👉👈</h2>
+    <button onclick="yesAnswer()">YES 😘</button>
+    <button onclick="yesAnswer()">VERY YES 💖</button>
+    <button onclick="noAnswer()">No 😢</button>
+  </div>
+
+  <div class="slide" id="slide3">
+    <h2>Chùi ui ai mà vừa đẹp trai vừa giỏi quá zị ta! 😍🌟</h2>
+    <button onclick="nextSlide()">👉 Tiếp tục</button>
+  </div>
+
+  <div class="slide" id="slide4">
+    <h2>Muốn đi đâu chơi nì? 😽</h2>
+    <button onclick="showResult('yeee')">🍜 Đi ăn</button>
+    <button onclick="showResult('yeee')">🎬 Đi xem phim</button>
+    <button onclick="showResult('yeee')">☕ Đi cọp phi</button>
+    <button onclick="showResult('yeee')">🎨 Workshop hummmm</button>
+    <button onclick="showResult('di_dau_cung_duoc')">🤔 Cho trai đẹp tự si nghĩ á</button>
+  </div>
+
+  <div class="slide" id="slide5">
+    <h2 id="resultText"></h2>
+    <button onclick="nextSlide()">📩 Nhận thư mời nè</button>
+  </div>
+
+  <div class="slide" id="slide6">
+    <h2 class="final-text">Hẹn trai đẹp vào ngày hôm ý nhaaaa 💕</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
